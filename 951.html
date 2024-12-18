@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="753.css">
+</head>
+<body>
+  <header>
+    <h1>Моё Портфолио</h1>
+  <div class="theme-toggle">
+    <button id="toggle-theme">Переключить тему</button>
+  </div>
+  </header>
+
+  
+
+  <section id="e">
+    <h2>Добро пожаловать</h2>
+    <p>Я веб-дизайнер с опытом работы в создании адаптивных сайтов.</p>
+  </section><br>
+
+  <section id="about">
+    <h2>О себе</h2>
+    <img src="C:\Users\ardak\Downloads\7d6e91f3e8dec945a97639329476557f.jpg" alt="Моя фотография">
+    <p>Я специализируюсь на создании красивых и функциональных веб-решений.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Мои проекты</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="C:\Users\ardak\Pictures\Снимок экрана 2024-12-03 090827.jpg" alt="Проект 1">
+        <div class="project-overlay">
+          <button class="more-info" data-modal="modal1">Подробнее</button>
+           <p>Просмотров: <span class="view-count">0</span></p> 
+        </div>
+      </div>
+      <div class="project">
+        <img src="C:\Users\ardak\Pictures\Снимок экрана 2024-12-03 091218.jpg" alt="Проект 2">
+        <div class="project-overlay">
+          <button class="more-info" data-modal="modal2">Подробнее</button>
+          <p>Просмотров: <span class="view-count">0</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Навыки</h2>
+    <div class="skill-bar">
+      <p>HTML</p>
+      <div class="progress">
+        <div class="progress-value" style="width: 90%;">90%</div>
+      </div>
+    </div>
+    <div class="skill-bar">
+      <p>CSS</p>
+      <div class="progress">
+        <div class="progress-value" style="width: 70%;">70%</div>
+      </div>
+    </div>
+    <div class="skill-bar">
+      <p>JavaScript</p>
+      <div class="progress">
+        <div class="progress-value" style="width: 30%;">30%</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Инструменты и технологии</h2>
+    <div class="tools-grid">
+      <img src="C:\Users\ardak\Downloads\HTML5_logo_black.svg.png" alt="HTML">
+      <img src="C:\Users\ardak\Downloads\1675463198_gas-kvas-com-p-fonovii-risunok-v-css3-3.png" alt="CSS">
+      <img src="C:\Users\ardak\Downloads\javascript-logo.png" alt="JavaScript">
+    </div>
+  </section>
+
+  <section id="interests">
+    <h2>Интересы</h2>
+    <div class="jokes-container">
+      <div class="joke">
+        <h3>Анекдоты</h3>
+      <p>Программист загадывает загадку:<br>
+      — Что будет, если разделить ноль на ноль?<br>
+      — Ошибка! — отвечает математик.<br>
+      — Crash сервера! — отвечает программист.</p>
+      </div>
+      <div class="joke">
+        <h3>Анекдоты</h3>
+          <p>Системный администратор и программист летят в самолете. Вдруг один из двигателей отказывает. Программист:<br>
+          — Перезагрузим!<br>
+          Сисадмин:<br>
+          — Подождите, давайте сначала попробуем отключить и снова подключить кабель питания.<br></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Резюме</h2>
+    <a href="resume.pdf" download class="download-button">Скачать резюме</a>
+  </section>
+
+  <!-- Модальные окна -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3>Disturbed</h3>
+      <p>Это проект про рок-группу Disturbed. Сайт сделан в красно-черном стиле, там и плейлисты можно посмотреть, и новости посмотреть.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3> Природа в зелёных тонах</h3>
+      <p>Проект сделан не очень, но креативно, там есть и магазин, и регистрация (не знаю зачем, но надо).</p>
+    </div>
+  </div>
+
+    <button id="scroll-top" title="Наверх">▲</button>
+
+  <script src="852.js"></script>
+
+    <div class="sitemap">
+    <a href="#home">Главная</a>
+    <a href="#about">О себе</a>
+    <a href="#projects">Проекты</a>
+    <a href="#skills">Навыки</a>
+    <a href="#tools">Инструменты</a>
+    <a href="#interests">Интересы</a>
+    <a href="#resume">Резюме</a>
+  </div>
+
+</body>
+</html>

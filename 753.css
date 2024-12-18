@@ -1,0 +1,392 @@
+/* Базовые стили */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #1e293b, #334155);
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  background: #0f172a;
+  color: #38bdf8;
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Карта сайта */
+.sitemap {
+  position: fixed;
+  right: 10px;
+  top: 30%;
+  transform: translateY(-50%);
+  background: rgba(51, 65, 85, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.sitemap a {
+  display: block;
+  color: #94a3b8;
+  margin: 5px 0;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.sitemap a:hover {
+  color: #38bdf8;
+}
+
+/* Секции */
+section {
+  padding: 40px;
+  margin: 20px auto;
+  background: #1e293b;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+section h2 {
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Контейнер проекта */
+.project {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Эффект при наведении на проект */
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+/* Оверлей проекта */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Кнопка "Подробнее" */
+.more-info {
+  background: #38bdf8;
+  color: #1e293b;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  margin-bottom: 10px;
+}
+
+.more-info:hover {
+  background: #0284c7;
+}
+
+.more-info:active {
+  transform: scale(0.95);
+}
+
+
+/* Навыки */
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.progress {
+  background: #64748b;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress-value {
+  background: #38bdf8;
+  height: 100%;
+  line-height: 25px;
+  text-align: center;
+  color: #1e293b;
+  font-weight: bold;
+}
+
+/* Инструменты */
+.tools-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tools-grid img {
+  max-width: 10%;
+  height: auto;
+  transition: transform 0.3s;
+  filter: drop-shadow(0 0 5px #38bdf8);
+}
+
+.tools-grid img:hover {
+  transform: scale(1.2);
+}
+
+/* Интересы */
+.jokes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.joke {
+  background: #334155;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.joke h3 {
+  color: #38bdf8;
+}
+
+/* Резюме */
+.download-button {
+  display: inline-block;
+  background: #38bdf8;
+  color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background: #0284c7;
+}
+
+/* Модальные окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #1e293b;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #334155;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  color: #f8fafc;
+}
+
+.close {
+  color: #38bdf8;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #94a3b8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Плавающая кнопка "Наверх" */
+#scroll-top {
+  height: 38px;
+  width: 35px;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #38bdf8;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#scroll-top:hover {
+  background-color: #3b82f6;
+}
+
+/* Светлый режим */
+.dark-mode {
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  color: #1e293b;
+}
+
+.dark-mode header {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.dark-mode section {
+  background: #ffffff;
+}
+
+.dark-mode .sitemap {
+  background: rgba(226, 232, 240, 0.8);
+}
+
+.dark-mode .sitemap a {
+  color: #1e293b;
+}
+
+.dark-mode #scroll-top {
+  background-color: #1e293b;
+}
+
+.dark-mode .progress-value {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.dark-mode .joke {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.dark-mode .joke h3 {
+  color: #1e40af;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#e {
+    max-width: 50%;
+}
+
+#about{
+    max-width: 40%;
+}
+
+/* Контейнер для кнопки */
+.theme-toggle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Кнопка переключения темы */
+#toggle-theme {
+  background: linear-gradient(to right, #38bdf8, #0284c7);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+#toggle-theme:hover {
+  background: linear-gradient(to right, #0284c7, #0f172a);
+}
+
+#toggle-theme:active {
+  transform: scale(0.95);
+}
+
+#toggle-theme:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* Для светлого режима */
+.dark-mode #toggle-theme {
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  color: #f8fafc;
+}
+
+.dark-mode #toggle-theme:hover {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+}
+
+.view-count {
+  font-weight: bold;
+  color: #38bdf8;
+  font-size: 16px;
+}
