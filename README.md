@@ -1,2 +1,2 @@
-# my-first-project.github.io
+# my-first-project.github.kz
 My first project on GitHub
